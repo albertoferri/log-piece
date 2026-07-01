@@ -47,7 +47,14 @@
 					"icon": "images/icon.svg"
 				}
 			]
-		}
+		},
+		"commands": [
+			{
+				"command": "log-piece.skipToGrandLine",
+				"title": "Skip to the Grand Line (end of East Blue Saga)",
+				"category": "One Piece Adventure"
+			}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",

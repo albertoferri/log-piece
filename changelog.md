@@ -11,6 +11,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - New sidebar UI: saga badge, arc label, arc progress bar
 - Wano Country Saga features 37 milestones — the most of any arc, proportional to its 149-chapter length
 - Added placeholder image system for future artwork
+- New command "Skip to the Grand Line" to jump straight to the end of the East Blue Saga
+- Added Marketplace metadata (license, keywords, homepage, issue tracker, gallery banner)
+- Moved milestone data into its own module and added packaging config (.vscodeignore)
 - Updated publisher and repository references
 
 ## [0.1.3]

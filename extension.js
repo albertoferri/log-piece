@@ -27,6 +27,37 @@ async function activate(context) {
             vscode.window.registerWebviewViewProvider('log-piece.sidebarView', provider)
         );
 
+        context.subscriptions.push(
+            vscode.commands.registerCommand('log-piece.skipToGrandLine', async () => {
+                const eastBlueEnd = Math.max(
+                    ...milestones
+                        .filter(m => m.saga === "East Blue Saga")
+                        .map(m => m.commits)
+                );
+
+                if (commitCount >= eastBlueEnd) {
+                    vscode.window.showInformationMessage(
+                        `🏴‍☠️ You've already reached the Grand Line (commit #${commitCount}). Nothing to skip!`
+                    );
+                    return;
+                }
+
+                const choice = await vscode.window.showWarningMessage(
+                    `Skip ahead to the end of the East Blue Saga (commit #${eastBlueEnd})? Your journey will continue from the Grand Line.`,
+                    { modal: true },
+                    'Set Sail'
+                );
+                if (choice !== 'Set Sail') return;
+
+                commitCount = eastBlueEnd;
+                await context.globalState.update('commitCount', commitCount);
+
+                const milestone = milestones.find(m => m.commits === commitCount);
+                provider.update(commitCount, milestone.message, milestone.art);
+                vscode.window.showInformationMessage(`⚓ ${milestone.message}`);
+            })
+        );
+
         const watchedRepos = new Set();
 
         function watchRepo(repo) {
