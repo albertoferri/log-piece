@@ -4,6 +4,10 @@ All notable changes to the "log-piece" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.1]
+
+- Renamed the extension to "Log Piece" across the UI (activation message, sidebar badge, command category) and documentation
+
 ## [0.2.0]
 
 - Expanded story from 27 to 291 milestones, covering all sagas from East Blue to Elbaf (Final Saga)

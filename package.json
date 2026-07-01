@@ -2,7 +2,7 @@
 	"name": "log-piece",
 	"displayName": "Log Piece",
 	"description": "Help Luffy become the King of the Pirates — a commit-based One Piece story for your VS Code",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"publisher": "albertoferri",
 	"license": "MIT",
 	"keywords": [
@@ -52,7 +52,7 @@
 			{
 				"command": "log-piece.skipToGrandLine",
 				"title": "Skip to the Grand Line (end of East Blue Saga)",
-				"category": "One Piece Adventure"
+				"category": "Log Piece"
 			}
 		]
 	},

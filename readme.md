@@ -1,10 +1,10 @@
-# 🏴‍☠️ One Piece Adventure
+# 🏴‍☠️ Log Piece
 
 Help Luffy become the King of the Pirates — one commit at a time.
 
 ## What is this?
 
-One Piece Adventure is a VS Code extension that turns your git commits into a One Piece story. Every commit you make progresses Luffy's journey from Foosha Village all the way to Elbaf, the island of giants.
+Log Piece is a VS Code extension that turns your git commits into a One Piece story. Every commit you make progresses Luffy's journey from Foosha Village all the way to Elbaf, the island of giants.
 
 ## Features
 

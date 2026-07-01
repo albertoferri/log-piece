@@ -5,7 +5,7 @@ const milestones = require('./milestones');
  * @param {vscode.ExtensionContext} context
  */
 async function activate(context) {
-    vscode.window.showInformationMessage('🏴‍☠️ One Piece Adventure loaded!');
+    vscode.window.showInformationMessage('🏴‍☠️ Log Piece loaded!');
 
     try {
         const gitExtensionBase = vscode.extensions.getExtension('vscode.git');
@@ -218,7 +218,7 @@ class OnePieceSidebarProvider {
 
         const sagaLabel = saga
             ? `<div class="saga-badge">${saga}</div>`
-            : `<div class="saga-badge">🏴‍☠️ One Piece Adventure</div>`;
+            : `<div class="saga-badge">🏴‍☠️ Log Piece</div>`;
 
         const arcLabel = arc
             ? `<div class="arc-label">${arc}</div>`
