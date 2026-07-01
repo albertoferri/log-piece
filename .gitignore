@@ -2,3 +2,4 @@
 *.vsix
 .vsixmanifest
 node_modules/
+milestone-image-prompts.md

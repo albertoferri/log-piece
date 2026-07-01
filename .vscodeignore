@@ -9,3 +9,4 @@ node_modules/**
 .vsixmanifest
 *.vsix
 eslint.config.*
+milestone-image-prompts.md

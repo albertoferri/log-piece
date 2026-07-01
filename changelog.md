@@ -4,6 +4,10 @@ All notable changes to the "log-piece" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.2]
+
+- New extension icon
+
 ## [0.2.1]
 
 - Renamed the extension to "Log Piece" across the UI (activation message, sidebar badge, command category) and documentation
