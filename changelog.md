@@ -14,6 +14,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - New command "Skip to the Grand Line" to jump straight to the end of the East Blue Saga
 - Added Marketplace metadata (license, keywords, homepage, issue tracker, gallery banner)
 - Moved milestone data into its own module and added packaging config (.vscodeignore)
+- Lowered minimum required VS Code version to 1.75 so more users can install it
 - Updated publisher and repository references
 
 ## [0.1.3]
