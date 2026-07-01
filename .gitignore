@@ -1,0 +1,4 @@
+.DS_Store
+*.vsix
+.vsixmanifest
+node_modules/

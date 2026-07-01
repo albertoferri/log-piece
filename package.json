@@ -1,0 +1,65 @@
+{
+	"name": "log-piece",
+	"displayName": "One Piece Adventure",
+	"description": "Help Luffy become the King of the Pirates — a commit-based One Piece story for your VS Code",
+	"version": "0.2.0",
+	"publisher": "albertoferri",
+	"license": "MIT",
+	"keywords": [
+		"one piece",
+		"git",
+		"commit",
+		"gamification",
+		"anime",
+		"productivity",
+		"fun"
+	],
+	"engines": {
+		"vscode": "^1.118.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./extension.js",
+	"icon": "images/icon128.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/albertoferri/log-piece.git"
+	},
+	"bugs": {
+		"url": "https://github.com/albertoferri/log-piece/issues"
+	},
+	"homepage": "https://github.com/albertoferri/log-piece#readme",
+	"galleryBanner": {
+		"color": "#0a1628",
+		"theme": "dark"
+	},
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"type": "webview",
+					"id": "log-piece.sidebarView",
+					"name": "🏴‍☠️ Ship's Log",
+					"icon": "images/icon.svg"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.118.0",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "22.x",
+		"eslint": "^9.39.3",
+		"@vscode/test-cli": "^0.0.12",
+		"@vscode/test-electron": "^2.5.2"
+	}
+}

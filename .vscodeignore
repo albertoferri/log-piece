@@ -1,0 +1,9 @@
+.vscode/**
+.git/**
+.gitignore
+.vscodeignore
+**/.DS_Store
+.DS_Store
+.vsixmanifest
+*.vsix
+eslint.config.*
